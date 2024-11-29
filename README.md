@@ -1,18 +1,34 @@
-Counter Application with Database Integration
-Objective:
-Create a counter application that increments and decreases a counter value, while interacting with a database to store and manage the counter’s history. The application should include features to display all saved counters and provide the ability to delete specific counters.
-Requirements:
-1.	Counter Increment:
-o	Each time the counter is increased, the application should:
-	Increment the counter value.
-	Save the incremented counter to the database with the following details:
-	The timestamp of the increment (the exact time when the increment happens).
-o	The saved counter entry should store the counter’s value, the random name, and the timestamp of the increment.
-2.	Counter Decrement:
-o	When the counter is decremented, the application should:
-	Decrement the counter value.
-	Remove the previously saved counter record from the database (the most recent incremented counter record should be deleted).
-3.	Display All Saved Counters:
-o	Provide a feature (e.g., a button) that retrieves and displays all saved counter records from the database.
-4.	Delete Counter:
-o	For each saved counter, include a delete button that allows the user to delete that specific counter record from the database                      .
+# Counter Application with Database Integration  
+
+## Table of Contents  
+- [Overview](#overview)  
+- [Features](#features)  
+
+---
+
+## Overview  
+This Counter Application enables users to:  
+- Increment and decrement a counter value.  
+- Store counter increments in a database, including a timestamp and unique random name.  
+- Display all stored counters.  
+- Delete specific counters.  
+
+---
+
+## Features  
+1. **Counter Increment**  
+   - Increases the counter value by 1.  
+   - Saves the incremented counter in the database with:  
+     - Counter value.  
+     - Timestamp of increment.  
+     - A randomly generated name.  
+
+2. **Counter Decrement**  
+   - Decreases the counter value by 1.  
+   - Deletes the most recent incremented counter record from the database.  
+
+3. **Display All Saved Counters**  
+   - Fetches and displays all counter records from the database.  
+
+4. **Delete Specific Counter**  
+   - Allows users to delete a specific counter record using a dedicated delete button.  
